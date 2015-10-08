@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Выберите язык"
+        android:id="@+id/txtChoiseLan"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_english"
+        android:id="@+id/btn_English"
+        android:layout_above="@+id/btn_Ukraine"
+        android:layout_alignLeft="@+id/btn_Ukraine"
+        android:layout_alignStart="@+id/btn_Ukraine" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Русский"
+        android:id="@+id/btn_Rus"
+        android:layout_below="@+id/btn_Ukraine"
+        android:layout_alignRight="@+id/btn_Ukraine"
+        android:layout_alignEnd="@+id/btn_Ukraine"
+        android:layout_alignLeft="@+id/btn_Ukraine"
+        android:layout_alignStart="@+id/btn_Ukraine" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Украинский"
+        android:id="@+id/btn_Ukraine"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

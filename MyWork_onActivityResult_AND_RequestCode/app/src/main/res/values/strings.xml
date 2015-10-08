@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyWork_onActivityResult_AND_RequestCode</string>
+    <string name="txtOut_name">Как вас зовут?</string>
+    <string name="txtOut_lang">Выберите ваш язык</string>
+    <string name="button_presented">Представится</string>
+    <string name="button_language">Выбрать язык</string>
+    <string name="txtIn_name">Ваше имя</string>
+    <string name="button_goBack">Вернутся</string>
+    <string name="button_english">Английский</string>
+</resources>
