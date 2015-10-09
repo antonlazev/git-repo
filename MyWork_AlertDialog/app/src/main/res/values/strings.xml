@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyWork_AlertDialog</string>
+    <string name="button_alertdialog">AlertDialog</string>
 </resources>
