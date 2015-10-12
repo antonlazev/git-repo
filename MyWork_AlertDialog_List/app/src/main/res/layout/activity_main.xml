@@ -12,5 +12,6 @@
         android:text="@string/button_cheak_phone"
         android:id="@+id/btn_cheak_phone"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="pushBTN" />
 </RelativeLayout>
