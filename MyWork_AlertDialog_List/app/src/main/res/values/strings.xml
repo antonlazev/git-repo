@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyWork_AlertDialog_List</string>
+    <string name="button_cheak_phone">Телефоны</string>
 </resources>
