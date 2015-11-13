@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyWork_RadioButton_and_RadioGroup</string>
+    <string name="tvout_Developer">Developer</string>
+    <string name="tvOut_Developer">Developer</string>
+    <string name="rd_button_Red">RedColor</string>
+    <string name="rd_button_Green">GreenColor</string>
+    <string name="rd_button_Black">BlackColor</string>
+</resources>
