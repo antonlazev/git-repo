@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyWork_Notification</string>
+    <string name="Button_Push">Нажми меня =)</string>
+    <string name="Dzen">Ты познал ДЗЕН =)</string>
+</resources>
