@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Работа с MENU</string>
+    <string name="textVeiwDev">Я начинающий разработчик</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_abaut">Обо мне</string>
+    <string name="action_cats">Кошки</string>
+    <string name="najmi">Нажми на три точки =)</string>
+</resources>
