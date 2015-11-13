@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyWork_AlertDialog_CheckBox</string>
+    <string-array name="phoneModels">
+        <item>модель1</item>
+        <item>модель2</item>
+        <item>модель3</item>
+        <item>модель4</item>
+        <item>модель5</item>
+    </string-array>
+</resources>
