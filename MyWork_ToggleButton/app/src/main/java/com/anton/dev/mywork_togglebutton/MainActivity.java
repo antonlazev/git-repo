@@ -14,7 +14,8 @@ public class MainActivity extends Activity implements CompoundButton.OnCheckedCh
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final ToggleButton mButton = (ToggleButton)findViewById(R.id.button);
+        mtext = (TextView)findViewById(R.id.text);
+        final ToggleButton mButton = (ToggleButton) findViewById(R.id.button);
         mButton.setOnCheckedChangeListener(this);
 
     }
@@ -22,10 +23,9 @@ public class MainActivity extends Activity implements CompoundButton.OnCheckedCh
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        if(isChecked){
+        if (isChecked) {
             mtext.setText("Button Cheked");
-        }
-        else{
+        } else {
             mtext.setText("Button unchecked");
         }
 
