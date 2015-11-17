@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyWork_Editor</string>
+    <string name="Button_R">R</string>
+    <string name="Button_B">B</string>
+    <string name="Button_I">I</string>
+    <string name="SomeText">TextSize</string>
+    <string name="Button_plus">+</string>
+    <string name="Button_minus">-</string>
+    <string name="MyTexr">Hello, Android</string>
+    <string name="MyText" />
+</resources>
