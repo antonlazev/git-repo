@@ -17,7 +17,8 @@
         <EditText android:id="@+id/tabPage1"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:hint="@string/Enter_text_fo_page1"/>
+            android:hint="@string/Enter_text_fo_page1" />
+
         <EditText android:id="@+id/tabPage2"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -26,5 +27,6 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:hint="@string/Enter_text_fo_page3"/>
+
     </FrameLayout>
 </TabHost>
