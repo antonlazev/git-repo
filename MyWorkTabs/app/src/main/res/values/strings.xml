@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyWorkTabs</string>
+    <string name="Enter_text_fo_page1">Enter text for page 1</string>
+    <string name="Enter_text_fo_page2">Enter text for page 2</string>
+    <string name="Enter_text_fo_page3">Enter text for page 3</string>
+</resources>
