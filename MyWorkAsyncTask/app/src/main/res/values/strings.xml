@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyWorkAsyncTask</string>
+    <string name="TextViewProcents">0%</string>
+    <string name="LaunchButton">Launch</string>
+</resources>
