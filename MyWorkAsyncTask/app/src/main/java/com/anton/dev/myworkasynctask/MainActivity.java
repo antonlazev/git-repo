@@ -1,60 +1,60 @@
 package com.anton.dev.myworkasynctask;
 
+import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.SystemClock;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-    private ProgressBar mProgresbar;
-    private TextView mtvOutProcent;
+public class MainActivity extends Activity {
+    private ProgressBar mProgressbar;
+    private TextView mTvoutProcent;
+    private TextView mTvOutDev;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mProgresbar = (ProgressBar)findViewById(R.id.progressBar);
-        mtvOutProcent = (TextView)findViewById(R.id.tvOutProcent);
+        mProgressbar = (ProgressBar) findViewById(R.id.progressBar);
+        mTvoutProcent = (TextView) findViewById(R.id.tvOutProcent);
+        mTvOutDev = (TextView) findViewById(R.id.tvOut);
     }
-    public void mAsyncBtn (View view){
-        new MyWorkAsynctask().execute();
+    public void mAsyncBTN(View v){
+        new MyProgresTaskAsync().execute();
     }
-    public class MyWorkAsynctask extends AsyncTask<Void, Integer,Void>{
-        private int mProgresbarValue = 0;
 
+    class MyProgresTaskAsync extends AsyncTask<Void,Integer,Void>{
+        private int mProgresBarValue = 0;
         @Override
-        //Метод вызывается в потоке пользовательского интерфейса в начале
         protected void onPreExecute() {
             super.onPreExecute();
-            Toast.makeText(getApplicationContext(),"Начало процесcа",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"Процесс начат",Toast.LENGTH_SHORT).show();
         }
 
         @Override
-        //Метод вызывается в потоке пользовательского интерфейса в конце
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            Toast.makeText(getApplicationContext(),"Процесс завершен",Toast.LENGTH_LONG).show();
-
+            Toast.makeText(getApplicationContext(),"Процесс завершен",Toast.LENGTH_SHORT).show();
+            mTvOutDev.setText("Отличная работа");
         }
 
         @Override
         protected void onProgressUpdate(Integer... values) {
+            mProgressbar.setProgress(values[0]);
+            mTvoutProcent.setText(values[0] + "%");
             super.onProgressUpdate(values);
-            mProgresbar.setProgress(values[0]);
-            mtvOutProcent.setText(values[0] + " % ");
-
 
         }
 
         @Override
         protected Void doInBackground(Void... params) {
-            while (mProgresbarValue < 100){
-                mProgresbarValue++;
-                publishProgress(mProgresbarValue);
-                SystemClock.sleep(200);
+            while (mProgresBarValue < 100){
+                mProgresBarValue++;
+                publishProgress(mProgresBarValue);
+                SystemClock.sleep(100);
             }
             return null;
         }
